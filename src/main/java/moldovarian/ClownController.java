@@ -12,4 +12,9 @@ public class ClownController {
     public String getClown() {
         return "You're a " + EmojiManager.getForAlias("clown").getUnicode();
     }
+
+    @GetMapping("/or-not")
+    public String getClownOrNot() {
+        return "No, you definitely are a " + EmojiManager.getForAlias("clown").getUnicode();
+    }
 }
